@@ -11,7 +11,7 @@ fontfamilyoptions: sc, osf
 fontsize: 10pt
 geometry: margin=1in
 github: clemence-terzo
-jobtitle: Etudiant à l'Université de Mons
+jobtitle: Etudiante à l'Université de Mons
 keywords: Biologie, Science des données
 linkcolor: blue
 fontawesome: no
@@ -24,14 +24,14 @@ urlcolor: blue
 
 *Université de Mons*, Bachelier en Biologie \hfill 2020
 
-*Ecole secondaire*, orientation \hfill 2017
+*Athenée Royal de Dour*, orientation \hfill 2017
 
 
 # EMPLOIS
 
 *Job étudiant:*
 
- > Activité réalisée \hfill 2017--2018
+ > Service dans un vernissage \hfill 2017
 
 *Autre emploi:*
 
