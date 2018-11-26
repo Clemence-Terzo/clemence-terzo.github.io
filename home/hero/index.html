@@ -124,47 +124,48 @@ $(document).ready(function () {
 </div>
 
 
-<p>+++ # About/Biography widget. widget = “about” active = true date = “2017-11-28T18:23:00”</p>
+<p>+++ # Hero widget. widget = “hero” active = true date = 2017-10-15</p>
+<p>title = &quot; &quot;</p>
 <div id="order-that-this-section-will-appear-in." class="section level1">
 <h1>Order that this section will appear in.</h1>
-<p>weight = 5</p>
+<p>weight = 3</p>
 </div>
-<div id="list-your-academic-interests." class="section level1">
-<h1>List your academic interests.</h1>
-<p>[interests] interests = [ “Biology”, “Ethology”, “Animals”, “Evolution”, “Nature” ]</p>
+<div id="overlay-a-color-or-image-optional." class="section level1">
+<h1>Overlay a color or image (optional).</h1>
 </div>
-<div id="list-your-qualifications-such-as-academic-degrees." class="section level1">
-<h1>List your qualifications (such as academic degrees).</h1>
+<div id="deactivate-an-option-by-commenting-out-the-line-prefixing-it-with-." class="section level1">
+<h1>Deactivate an option by commenting out the line, prefixing it with <code>#</code>.</h1>
+<p>[header] overlay_color = “#666” # An HTML color value. overlay_img = “headers/coq.jpg” # Image path relative to your <code>static/img/</code> folder. overlay_filter = 0.3 # Darken the image. Value in range 0-1.</p>
 </div>
-<div id="education.courses" class="section level1">
-<h1>[[education.courses]]</h1>
+<div id="call-to-action-button-optional." class="section level1">
+<h1>Call to action button (optional).</h1>
 </div>
-<div id="course-master-in-bbmcboe" class="section level1">
-<h1>course = “Master in BBMC/BOE”</h1>
+<div id="activate-the-button-by-specifying-a-url-and-button-label-below." class="section level1">
+<h1>Activate the button by specifying a URL and button label below.</h1>
 </div>
-<div id="institution-university-of-mons-belgium" class="section level1">
-<h1>institution = “University of Mons, Belgium”</h1>
-</div>
-<div id="year-2023" class="section level1">
-<h1>year = 2023</h1>
-</div>
-<div id="education.courses-1" class="section level1">
-<h1>[[education.courses]]</h1>
-</div>
-<div id="course-bachelor-in-biology" class="section level1">
-<h1>course = “Bachelor in Biology”</h1>
-</div>
-<div id="institution-university-of-mons-belgium-1" class="section level1">
-<h1>institution = “University of Mons, Belgium”</h1>
-</div>
-<div id="year-2021" class="section level1">
-<h1>year = 2021</h1>
-<p>[[education.courses]] course = “My orientation” institution = “Athenée Royal de Dour” year = 2018</p>
+<div id="deactivate-by-commenting-out-parameters-prefixing-lines-with-." class="section level1">
+<h1>Deactivate by commenting out parameters, prefixing lines with <code>#</code>.</h1>
+<p>[cta] url = “files/cv.pdf” label = ‘<i class="fa fa-download"></i> Curriculum Vitae (PDF)’</p>
 <p>+++</p>
-</div>
-<div id="about-me" class="section level1">
-<h1>About Me</h1>
-<p>I am student in bachelor at the University of Mons, Belgium. I did my hight school at the Royale Athene of Dour, in Belgium. I choose biology because I really love animals and nature and I like to learn news things about it. I want to study animals behaviours and change the world.</p>
+<p>Clemence Terzo <br> <small>I am a student in bachelor of Biology at the University of Mons</small> <br><br></p>
+<script type="text/javascript">
+  (function defer() {
+    if (window.jQuery) {
+      jQuery(document).ready(function(){
+        GetLatestReleaseInfo();
+      });
+    } else {
+      setTimeout(function() { defer() }, 50);
+    }
+  })();  
+  function GetLatestReleaseInfo() {
+    $.getJSON('https://api.github.com/repos/gcushen/hugo-academic/tags').done(function (json) {
+      let release = json[0];
+      
+      $('#academic-release').text('Latest release ' + release.name);  
+    });    
+}  
+</script>
 </div>
 
 
